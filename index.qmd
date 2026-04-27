@@ -1,9 +1,11 @@
 ---
-title: "Selection bias meme"
 format:
   html:
     toc: false
-    title-block-style: none
+    include-in-header:
+      text: |
+        <style>#title-block-header{display:none}</style>
+pagetitle: "Selection bias meme"
 execute:
   echo: false
 ---
