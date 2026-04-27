@@ -135,7 +135,7 @@ from step1_prepare_image import prepare_image
 
 # Load and prepare the image
 # CHANGE THIS to use your own image!
-img_path = 'fleischhacker.jpg'  # Example image - replace with your own image
+img_path = 'ryan.png'  # Example image - replace with your own image
 gray_image = prepare_image(img_path, max_size=512)
 
 # Display the prepared image
@@ -286,22 +286,22 @@ print(f"  - Use mid_tone_center around {tonal_stats['mean']:.2f} to emphasize av
 #| fig-cap: "Block letter S representing selection bias"
 #| eval: false
 
-# UNCOMMENT AND USE THIS ONCE YOU'VE WRITTEN step4_create_block_letter.py:
-# from step4_create_block_letter import create_block_letter_s
-# 
-# # Get image dimensions
-# h, w = gray_image.shape
-# 
-# # Create block letter S
-# block_letter = create_block_letter_s(h, w, letter="S", font_size_ratio=0.9)
-# 
-# # Display the block letter
-# fig, ax = plt.subplots(figsize=(6.5, 5))
-# ax.imshow(block_letter, cmap='gray', vmin=0, vmax=1)
-# ax.axis('off')
-# ax.set_title('Step 4: Selection Bias (Block Letter S)', fontsize=14, fontweight='bold', pad=10)
-# plt.tight_layout()
-# plt.show()
+#UNCOMMENT AND USE THIS ONCE YOU'VE WRITTEN step4_create_block_letter.py:
+from step4_create_block_letter import create_block_letter_s
+ 
+ # Get image dimensions
+h, w = gray_image.shape
+ 
+ # Create block letter S
+block_letter = create_block_letter_s(h, w, letter="S", font_size_ratio=0.9)
+ 
+ # Display the block letter
+fig, ax = plt.subplots(figsize=(6.5, 5))
+ax.imshow(block_letter, cmap='gray', vmin=0, vmax=1)
+ax.axis('off')
+ax.set_title('Step 4: Selection Bias (Block Letter S)', fontsize=14, fontweight='bold', pad=10)
+plt.tight_layout()
+plt.show()
 ```
 
 ## Step 5: Create Masked Image ⚠️ **YOUR TASK**
