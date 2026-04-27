@@ -284,7 +284,7 @@ print(f"  - Use mid_tone_center around {tonal_stats['mean']:.2f} to emphasize av
 #| label: step4-block-letter
 #| echo: false
 #| fig-cap: "Block letter S representing selection bias"
-#| eval: false
+#| eval: 
 
 #UNCOMMENT AND USE THIS ONCE YOU'VE WRITTEN step4_create_block_letter.py:
 from step4_create_block_letter import create_block_letter_s
